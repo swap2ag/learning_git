@@ -3,3 +3,6 @@ I am learning git checkout commands for a detached HEAD ...
 I will be making changes and committing now ...
 
 I will then move back to the first commit using `git checkout <commit-HASH>`
+
+
+I tried to commit in HEAD detached state and then coming back to branch master... git showed me a warning that I am leaving a commit behind and should attach it to a new branch ... So, I am now attaching it to a new branch ...!!!
