@@ -7,6 +7,8 @@
 2. Using `git revert HEAD`  
 	* Ideal undo method for public shared repos
 	* Simply creates a new commit having the changes undone
-3. Using `git reset --hard _<commit-hash>_`
+3. Using `git reset --hard <commit-hash>`
 	* This method of undoing changes has the cleanest effect on history.
 	* Doing a reset is great for local changes however it adds complications when working with a shared remote repository. 
+
+## Please refer to readme on both branches to see my extensive research results
