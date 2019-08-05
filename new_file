@@ -3,4 +3,5 @@ I have created this new file in detached HEAD state and I will not be committing
 
 
 
-I have to try something else also ... I have to commit the changes in detached HEAD state and see where do these changes reflect !!!
+I have to try something else also ... I have to commit the changes in detached HEAD state and see where do these changes reflect !!!  SO git clearly gave me warning that I am leaving this commit behind.
+SO, I had to create a different branch to carry this commit forward... Note that all the later commits do not appear this new branch ....
