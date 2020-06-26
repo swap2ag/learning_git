@@ -12,3 +12,32 @@
 	* Doing a reset is great for local changes however it adds complications when working with a shared remote repository. 
 
 ## Please refer to readme on both branches to see my extensive research results
+
+# Exposing ports
+
+If you want to access services running in your workspace, e.g. a development HTTP server on port `8080`,
+you need to expose that port first. Gitpod has two means of doing that:
+
+1. On-the-fly: when you start a process which listens on a port in your workspace, Gitpod will ask you if you want to expose that port to the internet.
+2. In your configuration: if you already know that you want a particular port exposed, you can configure it in the `.gitpod.yml` file and skip the extra click later on. For example:
+
+```text
+ports:
+  - port: 8080
+    onOpen: open-browser
+```
+
+## Jupyter config
+
+Enter below command to generate jupyter configuration file for the first time.  
+`jupyter notebook --generate-config`
+
+## Allow all ip addresses
+
+```python
+# Set ip to '*' to bind on all interfaces (ips) for the public server
+c.NotebookApp.ip = '*'
+```
+
+[Resource link](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#running-a-public-notebook-server)
+
